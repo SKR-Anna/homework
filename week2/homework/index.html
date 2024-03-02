@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник для владельцев магических животных</title>
+</head>
+<body>
+    <h1>Опросник для владельцев магических животных</h1>
+    <form method="post">
+        <div>
+            <label for="pet-name">Кличка питомца</label>
+            <input type="text" id="pet-name" name="pet-name" required>
+        </div>
+        <div>
+            <label for="owner"> Имя владельца</label>
+            <input type="text" id="owner" name="owner" required>
+        </div>
+        <fieldset>
+            <legend>Контакты владельца</legend>
+            <div>
+                <label for="phone">Номер телефона</label>
+                <input type="text" id="phone" name="phone"/>
+            </div>
+            <div>
+                <label for="email">Почта</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </fieldset>
+        <div>
+            <label for="select">Вид животного</label>
+            <select name="select" id="select">
+                <option value="1">Собака</option>
+                <option value="2">Кошка</option>
+                <option value="3">Птица</option>
+                <option value="4">Лошадь</option>
+                <option value="5">Ящерица</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Питание</legend>
+            <div>
+                <label for="fish">Рыба</label>
+                <input type="checkbox" id="fish" name="fish" required>
+                <br/>
+                <label for="veg">Овощи</label>
+                <input type="checkbox" id="veg" name="veg" required>
+                <br/>
+                <label for="meat">Мясо</label>
+                <input type="checkbox" id="meat" name="meat" required>
+                <br/>
+                <label for="feed">Комбикорм</label>
+                <input type="checkbox" id="feed" name="feed" required>
+            </div>
+        </fieldset>
+        <div>
+            <label for="sex">Пол животного</label><br/>
+            Самка<input type="radio" id="female" name="sex" required> Самец <input type="radio" id="male" name="sex" required>
+        </div>
+        <div>
+            <label for="comments">Комментарии владельца</label><br/>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="photo">Фото питомца</label>
+            <input type="file" id="photo" name="photo" required>
+        </div>
+        <div>
+            <button>Сохранить</button>
+        </div>
+    </form>
+</body>
+</html>

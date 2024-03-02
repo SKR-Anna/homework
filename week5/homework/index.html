@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,
+        main,
+        nav,
+        section,
+        aside,
+        footer{
+            border: 1px solid red;
+        }
+
+        .header{
+            height: 10vh;
+        }
+
+        .footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height: 20vh;
+        }
+
+        .align-self-center{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .align-self-start{
+            align-self: flex-start;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .align-self-end{
+            align-self: flex-end;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+
+            .main{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            /*align-items: stretch;*/
+            }
+
+        body{
+            display: flex;
+            flex-flow: column;
+            min-height: 100vh;
+        }
+
+        aside{
+            width: 20vw;
+        }
+
+        .sectionf{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            align-items: stretch;
+        }
+
+        .section{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">заголовок</header>
+    <main class="main">
+            <section class="section align-self-start">Основная часть</section>
+            <section class="section align-self-center">Ещё 2</section>
+            <section class="section align-self-center"">Ещё 3</section>
+            <section class="section align-self-end">Ещё 4</section>
+        <aside class="aside">
+            сбоку
+        </aside>
+    </main>
+    <footer class="footer">
+        <section class="sectionf">Секция футера 1</section>
+        <section class="sectionf">Секция футера 2</section>
+        <section class="sectionf">Секция футера 3</section>
+        <section class="sectionf">Секция футера 4</section>
+    </footer>
+</body>
+</html>

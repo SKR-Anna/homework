@@ -1,0 +1,12 @@
+/*надо восстановить цсс код как-нибудь в выходной...*/
+h2{
+    color: blue;
+}
+
+img{
+    width: 50vw;
+}
+
+p::first-letter{
+    color: brown;
+}
