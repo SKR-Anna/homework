@@ -4,15 +4,14 @@ header,
 .mainmenu,
 .menu,
 p,
-h1,
-h2{
+h1{
     font-family: "Roboto", sans-serif;
 }
 
 header,
 main,
 #mainnav{
-    background: #fefbf1;
+    background: #beb3e4;
     width: 100%;
 }
 
@@ -39,21 +38,11 @@ header{
     /*48 размер видимо*/
     font-size: 20px;
     line-height: 150%;
-    
-}
-
-#logo{
-    width: 50px;
-    height: 50px; 
+    background: #beb3e4;
 }
 
 main{
-    height: 1941px;
-}
-
-h2{
-    font-size: 80px;
-    line-height: 110%;
+    height: 1500px;
 }
 
 h1{
@@ -97,10 +86,13 @@ img{
 }
 
 .mainmenu{
+    display: flex;
     font-size: 14px;
-    background: #fefbf1;
+    background:#beb3e4;
     padding: 15px;
-    
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .menu{
@@ -125,11 +117,18 @@ nav .mainmenu:hover{
     text-decoration: underline;
 }
 
+img:hover{
+    transform: scale(120%);
+}
+
 footer{
     border-radius: 0 1px 0 0;
     width: 100%;
-    height: 644px;
+    height: 100px;
     background: #084935;
+    display: inline-flex;
+    justify-content: center;
+    align-content: space-evenly;
 }
 
 /* list{display flex} если надо записать в строчку. list-style-type none чтобы убрать точечки в li*/
