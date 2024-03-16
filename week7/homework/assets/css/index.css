@@ -1,3 +1,101 @@
 
 
 /*# sourceMappingURL=index.css.map */
+
+.header{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: #F9F7F4;
+    width: 100vw;
+    height: 10vh;
+    border: 1px solid blue;
+}
+
+.nav{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: #383230;
+    text-decoration: none;
+    align-self: center;
+
+}
+
+.nav:hover{
+    text-decoration: underline;
+}
+
+.logo{
+grid-column: 6/ span 4;
+grid-row: 3/6;
+max-width: 100%;
+}
+
+.header_nav{
+    grid-column: 22/45;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_div{
+    grid-column: 54/ span 6;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.main_div_1{
+    background-color: #F9F7F4;
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100vw;
+    border: 1px solid blue;
+}
+
+#luxury{
+    grid-column: 22/ span 22;
+    grid-row: 2/3;
+    max-width: 100%;
+}
+
+#spot{
+    grid-column: 34/34;
+    grid-row: 4/4;
+    max-width: 100%;
+}
+
+.main_div_2{
+grid-row: 2/span 3;
+grid-column: 1/span 50;
+background-image: url(/week7/homework/assets/images/imgdiv.png);
+background-repeat: no-repeat;
+width: 100vw;
+border: 1px solid blue;
+}
+
+/*.main_div_3{
+grid-row: 5/span 1;
+grid-column: 1/span 50;
+width: 100vw;
+border: 1px solid blue;
+display: grid;
+grid-template-columns: repeat(60, 1fr);
+grid-template-rows: repeat(16, 1fr);
+
+.text_div_3{
+
+}
+} если убрать эти скобки то структура сайта ломается, не понимаю почему*/
+
