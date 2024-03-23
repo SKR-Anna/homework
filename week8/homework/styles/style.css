@@ -1,0 +1,66 @@
+header{
+    background-color: black;
+}
+
+.active{
+    color: white;
+    font-weight: 700;
+}
+
+.gray{
+    color: gray;
+}
+
+.header_div{
+    align-items: center;
+}
+
+/*.nav justify-content-end{
+    align-items: center;
+} почему содержимое не выравнивается по центральной линии?*/ 
+
+.card-title{
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.card1{
+    background-color: lightgrey;
+    width: 60vw;
+    height: 25vh;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.main{
+    padding-left: 20vw;
+}
+
+.container{
+    margin-top: 20px;
+    width: 80vw;
+    align-self: center;
+    padding-left: 5%;
+}
+
+.footer{
+    background-color: black;
+    height: 5vh;
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+
+.footer_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1px;
+}
+
+.text_footer{
+    color: white;
+    font-weight: 200;
+    font-size: smaller;
+    padding-top: 15px;
+}
