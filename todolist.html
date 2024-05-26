@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <style>
+            .completed {
+                text-decoration: line-through;
+            }
+
+            .page {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+
+            .title {
+                color: rgb(67, 142, 160);
+            }
+
+            .button {
+                background-color: rgb(14, 142, 142);
+                opacity: 70%;
+            }
+        </style>
+	</head>
+	<body class="page">
+        <h1 class="title">ToDo List</h1>
+		<main class="main">
+    <div>
+		<input type="text" id="taskInput" placeholder="Введите задачу" class="input" />
+		<button id="addButton" class="button">Добавить</button>
+    </div>
+    <ul id="taskList"></ul>
+		</main>
+
+        <script>
+            //Получаем необходимые элементы DOM
+            const taskInput = document.getElementById('taskInput');
+            const addButton = document.getElementById('addButton');
+            const taskList = document.getElementById('taskList');
+
+            //Обработчик события клика на кнопку "Добавить"
+            addButton.addEventListener('click', function () {
+            
+            //Получаем значение, введенное в поле ввода
+            const taskText = taskInput.value;
+
+            //Создаём новый элемент списка
+            const newTask = document.createElement('li');
+
+            //Устанавливаем текст задачи внутри созданного элемента списка
+            newTask.textContent = taskText;
+
+            //Добавляем созданный элемент списка в нужное место на странице
+            taskList.append(newTask);
+
+            //Очищаем поле ввода после добавления задачи
+            taskInput.value = '';
+        });
+
+            //Обработчик события клика на задачу
+            taskList.addEventListener('click',function (event) {
+
+            // Меняем класс
+                if (event.target.tagName === 'LI') {
+                event.target.classList.toggle('completed');
+	}
+});
+        </script>
+	</body>
+</html>
